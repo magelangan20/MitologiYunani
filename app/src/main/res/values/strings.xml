@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mitologi Yunani</string>
+    <string name="_title">Nama</string>
+    <string name="_detail">Detail</string>
+    <string name="nama">Thoriq Q. Adzom</string>
+    <string name="email">Thoriqqoid@gmail.com</string>
+    <string name="kelas">Android Developer</string>
+    <string name="hobi">Tidur, bernafas, tidak melakukan apa-apa.</string>
+</resources>

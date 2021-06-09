@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@drawable/white_bg"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:civ_border_color="#FFFFFF"
+        app:civ_circle_background_color="#FFFFFF"
+        tools:src="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/_image"
+        android:layout_toRightOf="@id/_image"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="1dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="@string/_title" />
+
+        <TextView
+            android:id="@+id/_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="70dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="#000000"
+            tools:text="@string/_detail" />
+
+        <Button
+            android:id="@+id/_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="180dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="8dp"
+            android:text="Favourite"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
